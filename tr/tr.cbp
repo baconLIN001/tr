@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="tr" />
+		<Option platforms="Windows;" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option platforms="Windows;" />
+				<Option output="bin/Debug/tr" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option platforms="Windows;" />
+				<Option output="bin/Release/tr" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add directory="../../codeblocks/MinGW/include" />
+			<Add directory="../../codeblocks/MinGW/include/SDL2" />
+			<Add directory="../../codeblocks/MinGW/include/SDL2_image" />
+			<Add directory="../../codeblocks/MinGW/include/SDL2_ttf" />
+			<Add directory="../../codeblocks/MinGW/include/SDL2_mixer" />
+		</Compiler>
+		<Linker>
+			<Add option="-l mingw32 -l SDL2main -l SDL2  -l SDL2_image -l SDL2_ttf -l SDL2_mixer" />
+			<Add directory="../../codeblocks/MinGW/lib" />
+			<Add directory="../../codeblocks/MinGW/lib/SDL2" />
+			<Add directory="../../codeblocks/MinGW/lib/SDL2_image" />
+			<Add directory="../../codeblocks/MinGW/lib/SDL2_ttf" />
+			<Add directory="../../codeblocks/MinGW/lib/SDL2_mixer" />
+		</Linker>
+		<Unit filename="TombRaider/TRAnimator.cpp" />
+		<Unit filename="TombRaider/TRAnimator.hpp" />
+		<Unit filename="TombRaider/TRBgm.cpp" />
+		<Unit filename="TombRaider/TRBgm.h" />
+		<Unit filename="TombRaider/TRBullet.cpp" />
+		<Unit filename="TombRaider/TRBullet.hpp" />
+		<Unit filename="TombRaider/TREnemy.cpp" />
+		<Unit filename="TombRaider/TREnemy.hpp" />
+		<Unit filename="TombRaider/TRGameController.cpp" />
+		<Unit filename="TombRaider/TRGameController.hpp" />
+		<Unit filename="TombRaider/TRGrider.cpp" />
+		<Unit filename="TombRaider/TRGrider.hpp" />
+		<Unit filename="TombRaider/TRHero.cpp" />
+		<Unit filename="TombRaider/TRHero.hpp" />
+		<Unit filename="TombRaider/TRMapTile.cpp" />
+		<Unit filename="TombRaider/TRMapTile.hpp" />
+		<Unit filename="TombRaider/TRObject.cpp" />
+		<Unit filename="TombRaider/TRObject.hpp" />
+		<Unit filename="TombRaider/TRPathFinder.cpp" />
+		<Unit filename="TombRaider/TRPathFinder.hpp" />
+		<Unit filename="TombRaider/TRSprite.cpp" />
+		<Unit filename="TombRaider/TRSprite.hpp" />
+		<Unit filename="TombRaider/TRTexture.cpp" />
+		<Unit filename="TombRaider/TRTexture.hpp" />
+		<Unit filename="TombRaider/TRTimer.cpp" />
+		<Unit filename="TombRaider/TRTimer.hpp" />
+		<Unit filename="TombRaider/TRhp.cpp" />
+		<Unit filename="TombRaider/TRhp.h" />
+		<Unit filename="TombRaider/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
